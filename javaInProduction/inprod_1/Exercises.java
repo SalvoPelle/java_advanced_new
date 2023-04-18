@@ -1,4 +1,4 @@
-package javaadvanced.javaInProduction._1;
+package javaadvanced.javaInProduction.inprod_1;
 
 import java.math.BigDecimal;
 import java.math.BigInteger;
@@ -6,8 +6,8 @@ import java.math.BigInteger;
 public class Exercises {
     public static void main(String[] args) {
         exercise1();
-//        exercise2();
-//        exercise3();
+        exercise2();
+        exercise3();
 
     }
     /**
@@ -26,7 +26,6 @@ public class Exercises {
         double x = Math.random() * 100;
 
         String result = x>=50 ? "x is greater than or equal to 50" : "x is less than 50";
-
 
         System.out.println( x + " " + result);
 
@@ -69,7 +68,7 @@ public class Exercises {
         System.out.println("\nExercise 3: ");
         // Your code here
         BigInteger bigInteger = new BigInteger("999999999999999999");
-        BigDecimal bigDecimal = new BigDecimal("0.000000000000000000000000000001");
+        BigDecimal bigDecimal = new BigDecimal("0.0000000000000000000000000001");
 
         BigInteger resultBigInteger = bigInteger.divide(new BigInteger("3"));
         System.out.println(resultBigInteger);
@@ -77,16 +76,13 @@ public class Exercises {
         BigDecimal resultBigDecimal = bigDecimal.divide(new BigDecimal("0.25"));
         System.out.println(resultBigDecimal);
 
-        BigDecimal bigDecimal1 = new BigDecimal("0.0000125");
+        BigDecimal bigDecimal1 = new BigDecimal("0.00000125");
 
         try{
             BigDecimal resultBigDecimal1 = bigDecimal.divide(new BigDecimal(Math.PI));
         }catch (ArithmeticException e){
             System.out.println("Numero infinito");
         }
-
-
-
 
     }
 

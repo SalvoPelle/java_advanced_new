@@ -1,4 +1,4 @@
-package javaadvanced.javaInProduction._1;
+package javaadvanced.javaInProduction.inprod_1;
 
 public record Person(String name, int age, String address) {
     @Override
