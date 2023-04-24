@@ -1,4 +1,4 @@
-package javaadvanced._5;
+package javaadvanced.corretto_5;
 
 import java.io.IOException;
 import java.nio.file.Files;
@@ -7,9 +7,9 @@ import java.nio.file.Path;
 public class Exercises {
     public static void main(String[] args) {
         exercise1();
-        exercise2();
-        exercise3();
-        exercise4();
+//        exercise2();
+//        exercise3();
+//        exercise4();
     }
 
     /**
@@ -23,6 +23,7 @@ public class Exercises {
             Files.createFile(Path.of("Test.txt"));
         } catch (IOException e) {
             System.out.println("File alredy exist");
+            e.printStackTrace();
         }
     }
 
